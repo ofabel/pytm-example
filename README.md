@@ -1,13 +1,20 @@
+![PyPI - License](https://img.shields.io/pypi/l/pytmlib)
+![GitHub tag (with filter)](https://img.shields.io/github/v/tag/ofabel/pytm-example)
+![GitHub issues](https://img.shields.io/github/issues/ofabel/pytm-example)
+
 # pytm-example
 
 This repository contains various example exercises for the _Python Tool Manager_.
+You can find more information on the _Python Tool Manager_ in the
+corresponding [documentation on GitHub](https://ofabel.github.io/pytm-bootstrap/).
 
 ## Requirements
 
-* Python >= 3.9
-* Access to the Python Tool Manager
-* Pycharm CE or Professional (not mandatory, but recommended)
-* Basic knowledge in the Python programming language
+* [Python](https://www.python.org/) version 3.8 or higher.
+* Access to the Python Tool Manager.
+* [Pycharm CE or Professional](https://www.jetbrains.com/pycharm/) (not mandatory, but recommended).
+* Basic knowledge of the Python programming language.
+* Basic knowledge on how to use a terminal window.
 
 ## Quickstart
 
@@ -54,5 +61,31 @@ To run an exercise you need to open a terminal window, navigate to the cloned or
 activate the virtual environment. Now, navigate to the desired exercise folder and execute the following command:
 
 ```shell
+flask run --debug
+```
+
+### The Whole Procedure
+
+The following listing shows the whole procedure for a bash-compatible terminal:
+
+```shell
+# clone the repository
+git clone git@github.com:ofabel/pytm-example.git
+
+# change the current working directory to the just created folder
+cd pytm-example
+
+# create the virtual environment
+python -m venv venv
+
+# activate the just created virtual environment
+source venv/bin/activate
+
+# install the dependencies
+pip install -r requirements.txt
+pip install -r requirements-test.txt
+
+# change to a exercise folder and run the exercise
+cd plot
 flask run --debug
 ```
