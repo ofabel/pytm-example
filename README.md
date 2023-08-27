@@ -48,11 +48,10 @@ This will create a new `venv` folder, containing the virtual environment. It's m
 
 Open a terminal window, navigate to the cloned or downloaded repository
 folder, [activate the virtual environment](https://docs.python.org/3/library/venv.html#how-venvs-work) and execute the
-following commands:
+following command:
 
 ```shell
 pip install -r requirements.txt
-pip install -r requirements-test.txt
 ```
 
 ### Run an Exercise
@@ -83,7 +82,6 @@ source venv/bin/activate
 
 # install the dependencies
 pip install -r requirements.txt
-pip install -r requirements-test.txt
 
 # change to a exercise folder and run the exercise
 cd plot
