@@ -29,7 +29,7 @@ class Exercise(AbstractExercise):
     def version(self) -> str:
         return '0.1.0'
 
-    @entrypoint
+    @entrypoint('Overview')
     def start(self):
         return self.output \
             .add_action('Diameter', self.diameter) \
